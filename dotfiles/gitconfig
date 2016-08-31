@@ -1,10 +1,9 @@
 [user]
-	name = Your Name Comes Here
-	email = you@yourdomain.example.com
-	signingkey = <GPG pub code>
+	nane = Juarez Lustosa
+	email = juarez.lustosa@gmail.com
 [core]
 	editor = vim
-	excludesfile = /home/jonathanccalixto/.gitignore
+	excludesfile = /Users/juarezlustosa/.gitignore
 [color]
   ui = true
 	branch = auto
@@ -15,18 +14,20 @@
 	meta = blue black bold
 [alias]
 	co = checkout
-	ci = commit -S
+	ci = commit
 	st = status
 	br = branch
 	lg = log --oneline --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgp = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p
 	lga = log --oneline --all --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	mg = merge
-	amend = commit -S --amend
+	amend = commit --amend
 	unstage = reset HEAD
 	lgap = log --oneline --all --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p
 	lgf = log --name-status --decorate --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [push]
 	default = current
-[credential]
-	helper = cache --timeout=3600
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f

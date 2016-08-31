@@ -1,7 +1,7 @@
 path=$(pwd)
 
 mkdir -p $path/Configurations
-git clone git://github.com/jonathanccalixto/dotfiles.git $path/Configurations/dotfiles
+git clone git://github.com/juarezlustosa/dotfiles.git $path/Configurations/dotfiles
 
 cd $HOME
 ln -s $path/Configurations/dotfiles

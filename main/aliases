@@ -43,6 +43,6 @@ alias mysql_start="mysql.server start"
 alias act="activator run"
 alias gus="gulp serve"
 alias gut="gulp test"
-alias actc="activator ;h2-browser;run -Dconfig.file=$(pwd)/conf/test.conf"
+alias actc="activator ';h2-browser;run' -Dconfig.file=$(pwd)/conf/test.conf"
 
 

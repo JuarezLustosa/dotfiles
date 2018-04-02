@@ -15,5 +15,3 @@ for i in `find ${dotfiles_basedir}/dotfiles -maxdepth 1`; do
 done
 
 ln -s dotfiles/bin/git-publish-branch bin/
-ln -s dotfiles/bin/campfire bin/
-ln -s dotfiles/vagrant.d .vagrant.d

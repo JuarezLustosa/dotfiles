@@ -13,13 +13,6 @@ alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
 
-# vagrant comands
-alias vr="vagrant reload"
-alias vu="vagrant up"
-alias vs="vagrant ssh"
-alias vh="vagrant halt"
-alias vd="vagrant destroy -f"
-
 #rails 2 aliases
 alias sa="script/autospec"
 alias ss="script/server"
@@ -40,9 +33,4 @@ alias sg="bundle show"
 alias postgresql_start="postgres -D /usr/local/var/postgres"
 alias redis_start="redis-server /usr/local/etc/redis.conf"
 alias mysql_start="mysql.server start"
-alias act="activator run"
-alias gus="gulp serve"
-alias gut="gulp test"
-alias actc="activator ';h2-browser;run' -Dconfig.file=$(pwd)/conf/test.conf"
-
 

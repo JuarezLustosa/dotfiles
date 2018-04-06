@@ -25,10 +25,8 @@
 
 # Logs and databases #
 ######################
-/config/database.yml
 /coverage
 /public/coverage
-/db/schema.rb
 /db/**/*.dump
 /tmp
 #/test
